@@ -10,7 +10,7 @@
   })
 .catch(err=> {
     //default background image
-    document.body.style.backgroundImage =`url("/frontEnd/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg")`;
+    document.body.style.backgroundImage =`url("/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg")`;
 
 })
 
