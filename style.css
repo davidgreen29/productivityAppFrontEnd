@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  margin:0;
+}
+
+body { 
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+  .items-container {
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+#image-location {
+  color: white; 
+  text-shadow: 1px 1px 2px #aaaaaa; 
+}
+
+/*task manager styles*/
+
+.task-container { 
+  flex-basis: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#tasks {
+  padding: 1rem;
+}
+
+#add-button {
+  width:3rem;
+  height: 2rem;
+  font-size: 1.25rem;
+  border-radius: .5rem;
+  background-color:rgb(251, 90, 90) ;
+  color:white;
+  border: none;
+  margin: 1rem;
+}
+
+#task-input {
+  width: rem;
+  height: 1.75rem;
+  font-size: 1.25rem;
+  border-radius: .3rem;
+}
+
+#tasks-title {
+  color: white; 
+  text-shadow: 1px 1px 2px #aaaaaa;
+}
+
+.task-items {
+  margin: 0;
+  padding: 0;
+  max-width: 25em;
+}
+
+.item {
+  color: white; 
+  text-shadow: 2px 2px 2px #434343;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding: .5rem;
+  border-radius: .3rem;
+  list-style: none;
+  font-size: 1.25rem;
+  margin: .5rem;
+}
+
+.delete-button {
+  color: white;
+  border-radius: .2rem;
+  background-color:rgb(251, 90, 90) ;
+  border: none;
+  margin: .5rem;
+  font-size: 1rem;
+}
+
+/*styles for timer and clock*/
+
+.time-container {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+
+#curr-time {
+  padding-bottom: 2rem; 
+  font-size:4rem ;
+  font-weight: 500;
+  color: white; 
+  text-shadow: 1px 1px 2px #aaaaaa;
+}
+
+input:focus {
+  outline: none !important;
+  border-color:rgb(251, 90, 90) ;
+  box-shadow: 0 0 10px rgb(251, 90, 90) ;
+}
+
+.count-down-timer {
+  padding-bottom:10em;
+  color: white;
+  background-color: rgba(0,0,0,.7);
+  padding:1em;
+  border-radius: .3rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  position: relative; 
+}
+
+.time-set-container {
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+}
+
+#set-time {
+  font-size: 2.5rem ;
+  color: white; 
+  text-align: center;
+}
+
+#time-mins {
+  width: 3.3rem;
+  height: 3rem;
+  font-size: 2rem;
+  margin-top: .5em; 
+}
+
+#focus-button-start {
+  margin-top: 1rem;
+  width:4rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  background-color:rgb(251, 90, 90) ;
+  color:white;
+  border: none;
+}
+
+#focus-button-reset {
+  margin-top: 1rem;
+  width:5rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  background-color:rgb(251, 90, 90) ;
+  color:white;
+  border: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.time-remaining-container {
+  margin-top: .5em;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*weather display styles*/
+
+#weather {
+  color: white;
+}
+
+.weather-container {
+  display: flex;
+  flex-basis:100%;
+  justify-content: end;
+  padding-right: 1em;
+  padding-top: 2em;
+}
+
+#image-location {
+  padding-bottom:3rem;
+  color:white;
+}
+
+#weather-background {
+  display: flex;
+  flex-direction:column;
+  justify-content:right;
+  align-items: center;
+  background-color: rgba(0,0,0,.7);
+  height: fit-content;
+  width: auto;
+  padding: .5rem;
+  border-radius: .3rem;
+}
+
+#weather-img {
+  width: 5em;
+  height: 5em;
+}
+
+#weather-temp {
+  color: white;
+}
+
+#weather-description {
+  color: white;
+  margin-top: .5rem;
+}
+
+#weather-city {
+  color: white;
+  margin-top: .5rem;
+}
+
+/*smaller screen styles*/
+@media only screen and (max-width: 600px) {
+  .items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .weather-container {
+  display:block;
+  padding-bottom: 5em;
+  padding-top: 0;
+  padding-right: 0;
+  }
+
+  .count-down-timer {
+    margin-bottom: 0;
+  }
+
+  .todo-items {
+    max-width:40vh;
+  }
+
+  #image-location {
+    display: none;
+  }
+
+  .time-container{order:-1}
+}
