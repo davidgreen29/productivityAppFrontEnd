@@ -123,7 +123,7 @@ function countDown(){
 const hourToMlSecs = 60*60*1000;
 function currentWeather() {
 navigator.geolocation.getCurrentPosition(position => {
-    fetch(`http://localhost:3000/weather/${position.coords.latitude}/${position.coords.longitude}`)
+    fetch(`https://davids-productivity-server.herokuapp.com/weather/${position.coords.latitude}/${position.coords.longitude}`)
     .then(res => {
         if (!res.ok) {
             throw Error("Weather data not available")
