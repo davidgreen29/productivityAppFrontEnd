@@ -1,9 +1,10 @@
 
- fetch(`https://api.unsplash.com/photos/random?client_id=f6Jte_48qtGyAwnozp4fxIX-3IOfa-P8gHJpH3KdrTk&orientation=landscape&query=mountains`)
+ fetch("https://davids-productivity-server.herokuapp.com/image")
  .then(response=>response.json())
  .then(data=>{
+  console.log(data)
     document.body.style.backgroundImage =`url(${data.urls.full})`;
-         
+    
     document.getElementById('image-location').innerText=
        `${data.location.country!=null?data.location.country:''}`;
         
