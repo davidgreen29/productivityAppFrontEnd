@@ -14,6 +14,9 @@ because javascript set timeout and setinterval are not accurate for a clock or t
 to create an accurate timer you need to use the javascript current date/ time function to call this and adjust your
 clock if it is off. 
 
+Also I have the code for a task manager I created to add daily tasks to. I like to every morning plan my day with the 
+most important tasks I need to complete. 
+
 
 
 
